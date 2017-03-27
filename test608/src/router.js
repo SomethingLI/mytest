@@ -53,17 +53,13 @@ const routes = [
           name: "loading",
          path:"loading", 
          component:Loading,
-
-            children:[
-            {
-              name:"zhuce",
-              path:"zhuce",
-              component:Zhuce
-            }
-          ]
-
-
         },
+        {
+          name:"zhuce",
+          path:"zhuce",
+          component:Zhuce
+        },
+      
 
         {
           name: "myaddress",
