@@ -114,6 +114,7 @@
         margin: 0 -1rem;
         text-align: center;
         white-space: nowrap;
+        font-size: 1.8rem;
     }
     .aui-bar a {
         color: #bc946e;
