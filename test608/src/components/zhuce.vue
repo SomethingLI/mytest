@@ -13,7 +13,7 @@
                     <button class="aui-btn aui-btn-primary aui-btn-block" type="submit" id="submit">免费注册</button>
 
                     <div style="line-height: 50px;">
-                        <a class="aui-pull-left"  url="loginForget.html">已有账号?</a>
+                        <a class="aui-pull-left"  url="loginForget.html"  @click="changepage">已有账号?</a>
                         <a class="aui-pull-right"> <input type="checkbox" name="moren" checked class="xieyi"> 用户协议</input> </a>
                     </div>                    
                 </form>   
@@ -209,6 +209,9 @@
     </style>
 
     <script>
+
+    import router from "../router";
+
     (function (doc, win) {
       var docEl = doc.documentElement,
         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
@@ -222,6 +225,31 @@
       win.addEventListener(resizeEvt, recalc, false);
       doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
+
+    export default {
+      name: 'zhuce',
+      data () {
+        return {
+           // categorylist:[],
+           // goodslist:[],
+           // currentIndex:0,
+           // isShow:true
+        }
+      },
+
+
+      methods:{
+
+        changepage(){
+        //router.push(`/goods/detail/${id}`); //es6 字符串模板
+            router.push({name:"loading"})
+
+        }
+        
+
+
+      }
+    }
 
     </script>
 

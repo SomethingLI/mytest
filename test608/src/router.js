@@ -23,6 +23,7 @@ const   Mypage = resolve => require(["./components/mypage.vue"], resolve)
 
 const Shequ = resolve => require(["./components/shequ.vue"], resolve)
 
+
 const Loading = resolve => require(["./components/loading.vue"], resolve)
 const Mypro = resolve => require(["./components/mypro.vue"], resolve)
 const Myaddress = resolve => require(["./components/myaddress.vue"], resolve)

@@ -11,3 +11,24 @@
 <style>
 
 </style>
+
+<script>
+	export default {
+	  name: 'shequ',
+	  data () {
+	    return {
+	       
+	    }
+	  },
+
+
+	  methods:{
+
+	  	
+
+
+	  }
+	}
+
+
+</script>
